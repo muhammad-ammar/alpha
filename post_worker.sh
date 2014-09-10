@@ -2,6 +2,8 @@ current_path=`pwd`
 
 echo $current_path
 
+cp reports_browser.html $current_path/reports/
+
 reports_path=$current_path/reports
 
 echo $reports_path
