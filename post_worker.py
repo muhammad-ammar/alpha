@@ -22,7 +22,9 @@ file_dest = os.path.join(session_path, 'diff_quality_pep8.html')
 print 'copying diff_quality_pep8.html to:', file_dest
 shutil.copyfile(source_path, file_dest)
 
-shutil.copytree(reports_path, session_path)
+
+reports_dest = os.path.join(session_path, 'reports')
+shutil.copytree(reports_path, reports_dest)
 
 # finding if there is any screenshot or log file
 #print 'attaching failed screenshots and logs (if any)'
