@@ -46,7 +46,7 @@
           // NOTE: This WILL NOT work if you have your server's 
           // default index/home page in this folder, as that will
           // be returned instead of a directory listing!
-          $.get(".", function(data) {
+          $.get("./reports/", function(data) {
             // get a reference to the ul I want to populate
           var $s    = $(".shell ul");
           // get a list of a tags from the returned data
