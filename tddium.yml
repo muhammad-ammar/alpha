@@ -1,6 +1,6 @@
 :tddium:
   :hooks:
-      :post_worker: 'python .post_worker.py'
+      :post_worker: 'python ./post_worker.py'
   :test_pattern: 'none'
   :tests:
     - bash run_tests.sh
