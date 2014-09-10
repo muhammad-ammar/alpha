@@ -1,7 +1,12 @@
 :tddium:
   :tests:
     - bash run_tests.sh
-    - bash run_quality.sh
+    - :type: custom
+      :command: bash run_quality.sh
+      :invocation: single
+      :output: exit-status
+      :report_files:
+      - "reports/diff_quality_pep8.html"
   :python:
     :python_version: 2.7
     :pip_requirements_file: requirements.txt
