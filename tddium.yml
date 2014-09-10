@@ -1,6 +1,6 @@
 :tddium:
   :tests:
-      :type: nosetests
+    - :type: nosetests
       :command: bash run_tests.sh
   :python:
     :python_version: 2.7
