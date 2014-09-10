@@ -22,9 +22,19 @@ file_dest = os.path.join(session_path, 'diff_quality_pep8.html')
 print 'copying diff_quality_pep8.html to:', file_dest
 shutil.copyfile(source_path, file_dest)
 
+def copytree(src, dst, symlinks=False, ignore=None):
+    for item in os.listdir(src):
+        s = os.path.join(src, item)
+        d = os.path.join(dst, item)
+        if os.path.isdir(s):
+            shutil.copytree(s, d, symlinks, ignore)
+        else:
+            shutil.copy2(s, d)
+
+
 
 reports_dest = os.path.join(session_path, 'reports')
-shutil.copytree(reports_path, reports_dest)
+copytree(reports_path, reports_dest)
 
 # finding if there is any screenshot or log file
 #print 'attaching failed screenshots and logs (if any)'
