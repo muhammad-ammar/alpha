@@ -10,5 +10,5 @@ dest_path=$HOME/results/$TDDIUM_SESSION_ID/session/
 
 echo $dest_path
 
-#cp -rf $reports_path $dest_path 
+cp -rf $reports_path $dest_path 
 
