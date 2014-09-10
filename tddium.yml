@@ -1,6 +1,7 @@
 :tddium:
   :tests:
     - bash run_tests.sh
+    - bash run_quality.sh
   :python:
     :python_version: 2.7
     :pip_requirements_file: requirements.txt
