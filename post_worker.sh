@@ -25,4 +25,9 @@ echo '*************************************'
 
 ls $dest_path
 
+
+pep8_rpt=$current_path/reports/diff_quality_pep8.html
+
+cp -rf $pep8_rpt $dest_path/.diff_quality_pep8.html
+
 echo 'DONE'
